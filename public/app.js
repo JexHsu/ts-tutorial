@@ -8,7 +8,6 @@ import { Payment } from './classes/Payment.js';
 // docs.push(docOne);
 // docs.push(docTwo);
 const form = document.querySelector('.new-item-form');
-console.log(form.children);
 // inputs
 const type = document.querySelector('#type');
 const tofrom = document.querySelector('#tofrom');

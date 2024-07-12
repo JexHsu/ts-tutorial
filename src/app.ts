@@ -13,7 +13,6 @@ import { HasFormatter } from './interfaces/HasFormatter.js';
 // docs.push(docTwo);
 
 const form = document.querySelector('.new-item-form') as HTMLFormElement;
-console.log(form.children);
 
 // inputs
 const type = document.querySelector('#type') as HTMLInputElement;
