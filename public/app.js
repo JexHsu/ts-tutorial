@@ -4,7 +4,12 @@ if (anchor) {
     console.log(anchor.href);
 }
 console.log(anchor.href);
+console.log(anchor.protocol);
+console.log(anchor.hostname);
+console.log(anchor.port);
 //const form = document.querySelector('form')!;
+/**The as keyword in TypeScript is used for type assertion,
+ explicitly telling the compiler to treat a value as a specific type. */
 var form = document.querySelector('.new-item-form');
 console.log(form.children);
 // inputs
