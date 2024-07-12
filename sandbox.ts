@@ -11,8 +11,8 @@ age = 40;
 // isBlackBelt = 'yes';
 isBlackBelt = true;
 
-const circ = (diameter: number) => {
-  return diameter * Math.PI;
+const circ = (radius: number) => {
+  return 2 * radius * Math.PI;
 };
 
 // console.log(area('hello'));
