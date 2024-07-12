@@ -1,11 +1,16 @@
-import { HasFormatter } from "../interfaces/HasFormatter";
-
+import { HasFormatter } from '../interfaces/HasFormatter';
+/**
+ * <li>
+ *   <h4>invoice</h4>
+ *   <p>xxx owns £xxx for xxx </p>
+ * <li>
+ */
 export class ListTemplate {
-  constructor(private container: HTMLUListElement){}
+  constructor(private container: HTMLUListElement) {}
 
-  render(item: HasFormatter, heading: string, pos: 'start' | 'end'){
+  render(item: HasFormatter, heading: string, pos: 'start' | 'end') {
     const li = document.createElement('li');
-  
+
     const h4 = document.createElement('h4');
     h4.innerText = heading;
     li.append(h4);
@@ -14,7 +19,7 @@ export class ListTemplate {
     p.innerText = item.format();
     li.append(p);
 
-    if(pos === 'start'){
+    if (pos === 'start') {
       this.container.prepend(li);
     } else {
       this.container.append(li);
